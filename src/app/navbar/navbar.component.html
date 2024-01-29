@@ -1,0 +1,18 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <mat-list>
+      <mat-list-item [routerLink]="['/home']" (click)="drawer.toggle()">
+        <span>Accueil</span>
+        <mat-icon>home</mat-icon>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['/other']" (click)="drawer.toggle()">
+        <span>Other</span>
+        <mat-icon>question-mark</mat-icon>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <mat-drawer-content class="main-container">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
