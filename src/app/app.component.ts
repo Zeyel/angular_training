@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,4 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent {
   title = 'training_session';
+
+  constructor() {
+  }
 }
