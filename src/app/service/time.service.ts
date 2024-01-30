@@ -11,6 +11,6 @@ export class TimeService {
   constructor() {
     setInterval(() => {
       this.now.set(new Date());
-    }, 1);
+    }, 1000);
   }
 }

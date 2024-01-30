@@ -16,6 +16,7 @@ import { TimeService } from '../service/time.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit {
+
   @Input() drawer! : NavbarComponent;
 
   constructor( public time : TimeService) {
